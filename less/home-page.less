@@ -5,17 +5,48 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    @media @mobile{
+      flex-direction: column;
+      align-content: center;
+      width: 100%;
+      
+    }
+
+    h2{
+
+      @media @mobile{
+        font-weight: bold;
+      }
+
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile{
+        width: 62%;
+      }
+
+      p{
+        @media @mobile{
+          font-size: 1.2rem;
+          
+        }
+      }
     }
 
     .img-content {
-      width: 48%;
+      width: 50%;
       padding-left: 1%;
+
+      @media @mobile{
+        width: 62%;
+        padding: 0%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,7 +57,12 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+  
+        @media @mobile{
+        display: flex;
+        flex-direction: column-reverse;
+        border: none;
+        }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -42,6 +78,24 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    h2{
+      @media @mobile{
+        border-top: dashed 2px lightgray;
+        padding-top: 5%;
+        display:flex;
+        justify-content: center;
+        font-weight: bold;
+      }
+    }
+      p{
+        @media @mobile{
+          font-size: 1.2rem;
+          
+        }
+
+    }
+
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +107,50 @@
     display: flex;
     justify-content: space-between;
 
+    
+      @media @mobile{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        
+      }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      
+        @media @mobile{
+          width: 62%;
+          
+        }
+
+
+      h4{
+        
+          @media @mobile{
+           font-size: 2rem;
+           font-weight: bold;
+            
+          }
+      }
+
+      p{
+  
+          @media @mobile{
+            font-size: 1.2rem;
+            
+          }
+      }
+
+      .btn{
+        .custom-btn();
+
+        @media @mobile{
+          .custom-btn(@width: 300px)
+        }
+      }
+
     }
   }
 }// home
