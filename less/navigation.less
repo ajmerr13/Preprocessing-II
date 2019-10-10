@@ -1,1 +1,92 @@
 // Navigation Styles here
+
+header{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 2%;
+
+    @media @mobile{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1{
+        width: 20%;
+
+        @media @mobile{
+        width: 100%;
+        margin: 0 0 0 0;
+        display:flex;
+        justify-content: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        }
+    }
+
+    nav{
+        width: 25%;
+
+        @media @mobile{
+            width: 100%;
+            display:flex;
+            margin: 0 0 0 0;
+            justify-content: center;
+        }
+
+        a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.7rem;
+        padding: 2%;
+        font-weight: bold;
+
+        @media @mobile{
+            font-size: 1.5rem;
+            font-weight: normal;
+            padding: 2% 5%;
+        }
+
+        }
+    }
+  
+}
+
+.buspic{
+    display:flex;
+    justify-content: center;
+
+  img{
+        width: 62%;
+        height: auto;
+        border-top: dashed 2px lightgray;
+        }
+    }
+    
+.welcomePgraph{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    
+    p{
+        width: 62%;
+        border-bottom: dashed 2px lightgray;
+
+        @media @mobile{
+            font-size: 1.2rem;
+            padding-bottom: 3%;
+        }
+
+    }
+    h2{
+        padding-top: 2%;
+
+        @media @mobile{
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+    }
+}
+
+
